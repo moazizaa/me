@@ -49,7 +49,7 @@ def get_file_id(msg: Message):
 
 @app.on_message(filters.command(["المطور", "المبرمج", "العزايزي", "عزايزي", "ياعزايري"], ""), group=73) 
 async def deev(client: Client, message: Message):
-     user = await client.get_chat(chat_id="mvhmed")
+     user = await client.get_chat(chat_id="php_7")
      name = user.first_name
      username = user.username 
      bio = user.bio
@@ -73,7 +73,31 @@ async def deev(client: Client, message: Message):
      except:
         pass
 
-
+@app.on_message(filters.command(["السورس", "المبرمج", "العزايزي", "عزايزي", "ياعزايري"], ""), group=73) 
+async def deev(client: Client, message: Message):
+     user = await client.get_chat(chat_id="php_7")
+     name = user.first_name
+     username = user.username 
+     bio = user.bio
+     user_id = user.id
+     photo = user.photo.big_file_id
+     photo = await client.download_media(photo)
+     link = f"https://t.me/{message.chat.username}"
+     title = message.chat.title if message.chat.title else message.chat.first_name
+     chat_title = f"User : {message.from_user.mention} \nChat Name : {title}" if message.from_user else f"Chat Name : {message.chat.title}"
+     try:
+      await client.send_message(username, f"هناك شخص بالحاجه اليك عزيزي المطور\n{chat_title}\nChat Id : `{message.chat.id}`",
+      reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{title}", url=f"{link}")]]))
+     except:
+       pass
+     await message.reply_photo(
+     photo=photo,
+     caption=f"⋆ ʷᵉˡᶜᵒᵐᵉ ᵗᵒ ᵗʰᵉ ᵃᶻᵃᶻʸ ˢᵒᵘʳᶜᵉ ⤈⤌\n ⋆ يمكنك التواصل مع المبرمج مصطفي العزايزي عن طريق اليوزر في الاسفل..🙂♥️",
+     reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"{name}", user_id=f"{user_id}")]]))
+     try:
+       os.remove(photo)
+     except:
+        pass
 
 
 
@@ -124,7 +148,7 @@ async def welcome(client: Client, message):
    try:
     bot = client.me
     bot_username = bot.username
-    if message.new_chat_members[0].username == "mvhmed" or message.new_chat_members[0].username == "o_f_line":
+    if message.new_chat_members[0].username == "php_7" or message.new_chat_members[0].username == "o_f_line":
       try:
          chat_id = message.chat.id
          user_id = message.new_chat_members[0].id
