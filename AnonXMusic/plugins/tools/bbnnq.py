@@ -99,18 +99,3 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-    @app.on_message(command("السورس"))
-async def ahmad(client: Client, message: Message):
-    await message.reply_text(f"""⋆ ʷᵉˡᶜᵒᵐᵉ ᵗᵒ ᵗʰᵉ ᵃᶻᵃᶻʸ ˢᵒᵘʳᶜᵉ ⤈⤌    
-""",
-        reply_markup=InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("‹ ❥ᵛ͢ⁱᵖ┊⁽ Mostafa alazizy ₎“ٰۦ ›", url=f"https://t.me/php_7"),
-            ],
-            ]
-        ),
-    )
-    
-    
-    
