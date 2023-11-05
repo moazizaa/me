@@ -81,7 +81,7 @@ async def ihd(client: Client, message: Message):
     )
 
 
-@app.on_message(command("السورس"))
+@app.on_message(command("الاوامر"))
 async def ahmad(client: Client, message: Message):
     await message.reply_text(f"""
 ⋆ أوامࢪ بوت الميوزك⤌⤈
@@ -113,7 +113,7 @@ async def ahmad(client: Client, message: Message):
                 InlineKeyboardButton("احمد الحريزي", url="https://t.me/II_5_l"),
             ],
             [
-InlineKeyboardButton("اضف البوت الي مجموعتك", url=f"https://t.me/Gor_Genabot?startgroup=true"),
+InlineKeyboardButton("اضف البوت الي مجموعتك", url="https://t.me/Gor_Genabot?startgroup=true"),
             ],
             ]
         ),
