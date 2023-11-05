@@ -2,6 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AnonXMusic import app
+from strings.filters import command
 from AnonXMusic.core.call import Anony
 from AnonXMusic.utils.database import set_loop
 from AnonXMusic.utils.decorators import AdminRightsCheck
@@ -11,6 +12,9 @@ from config import BANNED_USERS
 
 @app.on_message(
     filters.command(["end", "stop", "cend", "cstop"]) & filters.group & ~BANNED_USERS
+)
+@app.on_message(
+    command(["ايقاف"]) & filters.group & ~BANNED_USERS
 )
 @AdminRightsCheck
 async def stop_music(cli, message: Message, _, chat_id):
