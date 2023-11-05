@@ -111,9 +111,7 @@ async def ahmad(client: Client, message: Message):
             [
                  InlineKeyboardButton("مصطفي العزايزي", url="https://t.me/php_7"),
                 InlineKeyboardButton("احمد الحريزي", url="https://t.me/II_5_l"),
-            ],
-            [
-InlineKeyboardButton("اضف البوت الي مجموعتك", url="https://t.me/Gor_Genabot?startgroup=true"),
+            
             ],
             ]
         ),
