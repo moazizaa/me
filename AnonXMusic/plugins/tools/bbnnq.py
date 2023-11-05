@@ -94,10 +94,23 @@ async def ahmad(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("‹ اضافة الى مجموعة ›", url=f"https://t.me/Gor_Genabot?startgroup=true"),
+                InlineKeyboardButton("‹ اضافة الى مجموعة ›", url=f"https://t.me/{app.username}?startgroup=true"),
             ],
             ]
         ),
     )
+    @app.on_message(command("السورس"))
+async def ahmad(client: Client, message: Message):
+    await message.reply_text(f"""⋆ ʷᵉˡᶜᵒᵐᵉ ᵗᵒ ᵗʰᵉ ᵃᶻᵃᶻʸ ˢᵒᵘʳᶜᵉ ⤈⤌    
+""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ❥ᵛ͢ⁱᵖ┊⁽ Mostafa alazizy ₎“ٰۦ ›", url=f"https://t.me/php_7"),
+            ],
+            ]
+        ),
+    )
+    
     
     
