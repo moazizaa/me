@@ -12,7 +12,6 @@ from AnonXMusic.plugins import ALL_MODULES
 from AnonXMusic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
-
 async def init():
     if (
         not config.STRING1
@@ -56,7 +55,6 @@ async def init():
     await app.stop()
     await userbot.stop()
     LOGGER("AnonXMusic").info("Stopping AnonX Music Bot...")
-
 
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(init())
