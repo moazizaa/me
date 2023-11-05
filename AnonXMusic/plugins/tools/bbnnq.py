@@ -80,7 +80,6 @@ async def ihd(client: Client, message: Message):
         )
     )
 
-
 @app.on_message(command("السورس"))
 async def ahmad(client: Client, message: Message):
     await message.reply_text(f"""
@@ -89,7 +88,7 @@ async def ahmad(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                                InlineKeyboardButton("مصطفي العزايزي", user_id=1183747742),
+                 InlineKeyboardButton("مصطفي العزايزي", url="https://t.me/php_7"),
                 InlineKeyboardButton("احمد الحريزي", url="https://t.me/II_5_l"),
             ],
             [
