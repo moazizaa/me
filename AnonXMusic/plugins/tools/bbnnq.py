@@ -80,10 +80,10 @@ async def ihd(client: Client, message: Message):
         )
     )
 
+
 @app.on_message(command("الاوامر"))
 async def ahmad(client: Client, message: Message):
     await message.reply_text(f"""🧚🏼‍♂️🔥 أوامࢪ بوت الميوزك🧚🏼‍♂️🔥:
-
 ‹: تشغيل - لتشغيل أغنية 🕷️
 ‹: تخطي - لتخطي الأغنية 🕷️
 ‹: انهاء - لانهاء تشغيل الاغنية 🕷️
@@ -99,7 +99,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["المطوررر","المبرممج","السورريطسس"]))
+@app.on_message(command("الاوامر"))
 async def ahmad(client: Client, message: Message):
     await message.reply_text(f"- 𝐖ᴇʟᴄᴏᴍᴇ 𝐓ᴏ 𝐒ᴏụʀᴄᴇ 𝙹𝙰𝙺𝙾𝙾 🥀\n- 𝐒ᴏụʀᴄᴇ 𝐃ᴇᴠᴇʟᴏᴘᴇʀ: @mvhmed 🧑‍💻",
         reply_markup=InlineKeyboardMarkup(
