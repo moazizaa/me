@@ -81,9 +81,27 @@ async def ihd(client: Client, message: Message):
     )
 
 
-@app.on_message(command("الاوامر"))
+@app.on_message(command("السورس"))
 async def ahmad(client: Client, message: Message):
-    await message.reply_text(f"""🧚🏼‍♂️🔥 أوامࢪ بوت الميوزك🧚🏼‍♂️🔥:
+    await message.reply_text(f"""
+⋆ ʷᵉˡᶜᵒᵐᵉ ᵗᵒ ᵗʰᵉ ᵃᶻᵃᶻʸ ˢᵒᵘʳᶜᵉ ⤈⤌
+""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                                InlineKeyboardButton("مصطفي العزايزي", user_id=1183747742),
+                InlineKeyboardButton("احمد الحريزي", url="https://t.me/II_5_l"),
+            ],
+            [
+InlineKeyboardButton("اضف البوت الي مجموعتك", url=f"https://t.me/Gor_Genabot?startgroup=true"),
+            ],
+            ]
+        ),
+    )
+    
+    @app.on_message(command("الاوامر"))
+async def ahmad(client: Client, message: Message):
+    await message.reply_text(f"""⋆ أوامࢪ بوت الميوزك⤌⤈:
 ‹: تشغيل - لتشغيل أغنية 🕷️
 ‹: تخطي - لتخطي الأغنية 🕷️
 ‹: انهاء - لانهاء تشغيل الاغنية 🕷️
@@ -99,15 +117,5 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command("الاوامر"))
-async def ahmad(client: Client, message: Message):
-    await message.reply_text(f"- 𝐖ᴇʟᴄᴏᴍᴇ 𝐓ᴏ 𝐒ᴏụʀᴄᴇ 𝙹𝙰𝙺𝙾𝙾 🥀\n- 𝐒ᴏụʀᴄᴇ 𝐃ᴇᴠᴇʟᴏᴘᴇʀ: @mvhmed 🧑‍💻",
-        reply_markup=InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("𝐃ᴇᴠᴇʟᴏᴘᴇʀ", user_id=5940413527),
-                InlineKeyboardButton("قناة البوت", url="https://t.me/mvhmed"),
-            ],
-            ]
-        ),
-    )
+    
+    
