@@ -4,7 +4,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from AnonXMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
 
-@app.on_message(filters.command(["السورس", "ياسورس"], ""))
+@app.on_message(filters.command(["السورس", "سورس"], ""))
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/19d68d531fd2f6f96e368.jpg",
